@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f5ed">
+<title>SUMUKHA | AI Natural Skincare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="#home"><img src="assets/sumukha-logo.png" alt="" class="brand-logo" onerror="this.style.display='none'"><span>sumukha<span class="brand-dot">.</span></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks"><a href="#features">Features</a><a href="#ingredients">Ingredients</a><a href="#scanner">Skin scan</a><a href="#assistant">AI Assistant</a></nav>
+  <button class="btn btn-outline" id="accountBtn">Login / Register</button>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy reveal"><p class="eyebrow">✿ NATURE MEETS INTELLIGENCE</p><h1>Understand your skin.<br><em>Grow with nature.</em></h1>
+  <p class="intro">Discover skincare knowledge, explore visible skin features, and build a thoughtful routine with nature-inspired guidance.</p>
+  <div class="hero-actions"><a class="btn" href="#scanner">Explore skin scan ↗</a><a class="text-link" href="#features">Discover SUMUKHA</a></div>
+  <div class="trust-note">✳ Educational guidance, not a medical diagnosis.</div>
+  <div class="hero-stats"><div><strong>01</strong><span>Understand</span></div><div><strong>02</strong><span>Learn</span></div><div><strong>03</strong><span>Care mindfully</span></div></div></div>
+  <div class="hero-visual reveal"><div class="visual-glow"></div><div class="floating-leaf leaf-one">❧</div><div class="floating-leaf leaf-two">✿</div>
+    <div class="portrait portrait-woman"><img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=700&q=85" alt="Woman in a natural skincare editorial portrait"><div class="portrait-caption"><span class="caption-icon">✿</span><div><strong>Her skin journey</strong><small>Gentle, mindful care</small></div></div></div>
+    <div class="portrait portrait-man"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=85" alt="Man in a skincare editorial portrait"><div class="portrait-caption"><span class="caption-icon">❧</span><div><strong>His skin journey</strong><small>Care made personal</small></div></div></div>
+    <div class="floating-badge"><span>✳</span><div><strong>Inspired by nature</strong><small>Guided by knowledge</small></div></div>
+    <div class="logo-stamp"><img src="assets/sumukha-logo.png" alt="SUMUKHA face and leaf emblem" onerror="this.style.display='none'"><span>SUMUKHA</span></div>
+  </div>
+</section>
+<section class="section" id="features"><div class="section-heading reveal"><p class="eyebrow">MADE FOR YOUR ROUTINE</p><h2>More understanding.<br><em>More mindful care.</em></h2><p>Skincare education, ingredient knowledge, and personal tracking in one place.</p></div>
+<div class="feature-grid">
+<article class="feature-card reveal"><span class="feature-icon">⌕</span><p class="card-number">01 / EXPLORE</p><h3>Skin Scan</h3><p>Preview a photo and explore visible skin features when image analysis is connected.</p><a href="#scanner">Explore scanner ↗</a></article>
+<article class="feature-card reveal"><span class="feature-icon">❋</span><p class="card-number">02 / DISCOVER</p><h3>Ingredient Guide</h3><p>Learn about common skincare ingredients, their uses, and precautions.</p><a href="#ingredients">Explore ingredients ↗</a></article>
+<article class="feature-card reveal"><span class="feature-icon">✧</span><p class="card-number">03 / UNDERSTAND</p><h3>AI Assistant</h3><p>Ask questions and receive educational skincare guidance from the connected AI.</p><a href="#assistant">Meet your guide ↗</a></article>
+</div></section>
+<section class="section scanner-section" id="scanner"><div class="section-heading reveal"><p class="eyebrow">YOUR PERSONAL SKIN JOURNAL</p><h2>Start with a <em>closer look.</em></h2><p>Choose a clear photo to preview it. AI analysis will be added through Python.</p></div>
+<div class="scanner-layout"><div class="scanner-info reveal"><div class="scanner-symbol">⌕</div><h3>Your skin, your journey.</h3><p>Prepare a well-lit image to keep track of visible skin features over time.</p><ul><li>✓ Photo preview before submission</li><li>✓ Personal scan history after account integration</li><li>✓ Educational recommendations with precautions</li></ul><p class="small-note">A photo cannot diagnose a skin condition or reliably determine facial fat percentage.</p></div>
+<div class="upload-panel reveal"><div class="upload-top-icon">✿</div><h3>Prepare your skin scan</h3><p>Choose a clear, well-lit photo. In this demo, the image stays in your browser.</p>
+<label class="upload-dropzone" for="skinPhoto" id="uploadDropzone"><span class="upload-symbol">＋</span><strong>Choose a photo</strong><small>JPG, PNG or WEBP · Up to 8 MB</small></label><input type="file" id="skinPhoto" accept="image/jpeg,image/png,image/webp" hidden>
+<div class="photo-preview" id="photoPreview"></div><button class="btn full-width" id="analyzeBtn" disabled>Analyze photo ↗</button><p class="status-message" id="scanMessage" aria-live="polite">AI analysis is not connected yet.</p></div></div></section>
+<section class="section" id="ingredients"><div class="section-heading reveal"><p class="eyebrow">THE INGREDIENT EDIT</p><h2>Nature, with <em>knowledge.</em></h2><p>Natural does not always mean irritation-free. Learn before trying a product.</p></div>
+<div class="ingredient-grid">
+<article class="ingredient-card reveal"><div class="ingredient-art oat"><span>✳</span><small>GENTLE CARE</small></div><div class="ingredient-copy"><p class="card-number">01 / BOTANICAL NOTES</p><h3>Oat-based care</h3><p>Colloidal oatmeal is used in some moisturizers and products for dry, sensitive-feeling skin.</p></div></article>
+<article class="ingredient-card reveal"><div class="ingredient-art aloe"><span>❋</span><small>PLANT EXTRACT</small></div><div class="ingredient-copy"><p class="card-number">02 / BOTANICAL NOTES</p><h3>Aloe vera</h3><p>Explore aloe in topical products and why formulation and individual tolerance matter.</p></div></article>
+<article class="ingredient-card reveal"><div class="ingredient-art green-tea"><span>❧</span><small>BOTANICAL EXTRACT</small></div><div class="ingredient-copy"><p class="card-number">03 / BOTANICAL NOTES</p><h3>Green tea</h3><p>Learn about its use in cosmetic formulas without assuming all products have the same effects.</p></div></article>
+</div><p class="safety-note reveal">Natural ingredients can still cause irritation. Patch-test new products and stop using a product if it causes a reaction.</p></section>
+<section class="section assistant-section" id="assistant"><div class="section-heading reveal"><p class="eyebrow">MEET YOUR AI GUIDE</p><h2>Questions welcome.<br><em>Care comes first.</em></h2><p>Chat with SUMUKHA about skincare basics. A real AI model will be connected through Python.</p></div>
+<div class="chat-panel reveal"><div class="chat-header"><div class="assistant-avatar"><img src="assets/sumukha-logo.png" alt="" onerror="this.style.display='none'">✿</div><div class="assistant-details"><strong>SUMUKHA Assistant</strong><small><span class="status-dot"></span> Skincare education</small></div><span class="chat-label">AI GUIDE</span></div>
+<div class="chat-messages" id="chatMessages" aria-live="polite"><div class="message assistant-message"><span class="message-mark">✿</span><div>Hi! Welcome to SUMUKHA. What would you like to learn about skincare today?<small>SUMUKHA Assistant</small></div></div></div>
+<div class="suggestion-chips"><button class="suggestion-chip" type="button">Basic skincare routine</button><button class="suggestion-chip" type="button">Learn about ingredients</button><button class="suggestion-chip" type="button">Sensitive skin basics</button></div>
+<form id="chatForm" class="chat-form"><input id="chatInput" type="text" maxlength="1000" placeholder="Ask a skincare question..." autocomplete="off" required><button class="btn send-btn" type="submit">Send ↗</button></form><p class="chat-disclaimer">Educational information only—not a medical diagnosis. Avoid sharing sensitive personal information.</p></div></section>
+<section class="section history-section" id="history"><div class="history-copy reveal"><p class="eyebrow">A LITTLE PROGRESS, OVER TIME</p><h2>Your journey,<br><em>in one place.</em></h2><p>After accounts and PostgreSQL are connected, review your saved scan summaries and skincare notes here.</p><button class="btn" id="historyAccountBtn">Get started ↗</button></div>
+<div class="history-card reveal"><div class="history-card-header"><span>MY SKIN JOURNAL</span><span class="journal-flower">✿</span></div><div class="history-empty"><span>❧</span><h3>Your story starts here.</h3><p>Your personal scan history will appear after backend integration and sign-in.</p></div><div class="history-card-footer"><span>SUMUKHA</span><span>CARE WITH INTENTION</span></div></div></section>
+</main>
+<footer class="footer"><a class="brand footer-brand" href="#home"><img src="assets/sumukha-logo.png" alt="" class="brand-logo" onerror="this.style.display='none'"><span>sumukha<span class="brand-dot">.</span></span></a><p>Understand your skin. Grow with nature.</p><div class="footer-links"><a href="#features">Features</a><a href="#ingredients">Ingredients</a><a href="#assistant">AI Assistant</a></div><p class="footer-note">For cosmetic education only. Not a substitute for professional care.</p><small>© <span id="currentYear"></span> SUMUKHA</small></footer>
+<dialog id="accountDialog" class="account-dialog"><button type="button" class="close-btn" id="closeDialog" aria-label="Close dialog">×</button><div class="dialog-brand"><img src="assets/sumukha-logo.png" alt="" onerror="this.style.display='none'"></div><p class="eyebrow">WELCOME TO SUMUKHA</p><h2>Your personal skin journal.</h2><p class="dialog-intro">Create your space for skincare notes and scan history.</p>
+<div class="account-tabs"><button type="button" class="tab active" data-mode="login">Login</button><button type="button" class="tab" data-mode="register">Register</button></div>
+<form id="accountForm"><div id="nameField" hidden><label for="accountName">Full name</label><input id="accountName" name="name" autocomplete="name" placeholder="Your name"></div><label for="accountEmail">Email address</label><input id="accountEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="accountPassword">Password</label><input id="accountPassword" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="At least 8 characters" required><button class="btn full-width" type="submit" id="accountSubmit">Login</button><p class="status-message" id="accountMessage" aria-live="polite">Demo only: account services are not connected yet.</p></form></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
